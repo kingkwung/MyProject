@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/noticeImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/noticeImg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#333"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="Campus Channel" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:textColor="#333"
+            android:textSize="12sp"
+            android:text="15.03.12" />
+        
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+        	android:layout_marginBottom="5dp"
+            android:textColor="#333"
+            android:textSize="17sp"
+            android:text="- UI 수정" />
+    </LinearLayout>
+
+</LinearLayout>

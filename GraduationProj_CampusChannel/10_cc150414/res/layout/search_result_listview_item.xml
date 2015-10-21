@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/searchResult_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/like" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/searchResult_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="percentage"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/searchResult_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rank"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/searchResult_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="store name"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+
+        <TextView
+            android:id="@+id/searchResult_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="store type"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/searchResult_univ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="store univ"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/searchResult_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="store tags"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+</LinearLayout>

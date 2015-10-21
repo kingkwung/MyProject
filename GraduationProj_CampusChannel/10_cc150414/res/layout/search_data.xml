@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.swdm.cc"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/univMent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="대학교를 선택하세요." />
+
+    <Spinner
+        android:id="@+id/mySpinner3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="True"
+        android:prompt="@string/univSearch" />
+
+    <TextView
+        android:id="@+id/storetypeMent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="업소 종류를 선택하세요." />
+
+    <Spinner
+        android:id="@+id/mySpinner4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="True"
+        android:prompt="@string/typeSearch" />
+
+    <TextView
+        android:id="@+id/storenameMent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="업소 이름을 입력하세요." />
+
+    <EditText
+        android:id="@+id/nameSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="업소이름"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/searchinfoMent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="찾는 정보를 입력하세요." />
+
+    <EditText
+        android:id="@+id/tagSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="태그이름"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/searchStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:text="검색하기" >
+    </Button>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:text="뒤로가기" >
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<!-- ?xml version="1.0" encoding="utf-8"? -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <ListView
+        android:id="@+id/listViewNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+       
+    </ListView>
+
+    <!-- <TextView
+        android:id="@+id/noti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 공지사항"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/noti1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/noti2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 도움말"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/noti3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/noti4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 묻고 답하기"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/noti5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/noti6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 회원탈퇴"
+        android:textAppearance="?android:attr/textAppearanceLarge" /> -->
+</LinearLayout>

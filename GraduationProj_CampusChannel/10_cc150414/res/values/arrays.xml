@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="univ">
+        <item>---------</item>
+        <item>가천대학교</item>
+        <item>가톨릭대학교</item>
+        <item>건국대학교</item>
+        <item>경기대학교</item>
+        <item>경희대학교</item>
+        <item>고려대학교</item>
+        <item>광운대학교</item>
+        <item>국민대학교</item>
+        <item>덕성여자대학교</item>
+        <item>동국대학교</item>
+        <item>동덕여자대학교</item>
+        <item>동서울대학교</item>
+        <item>명지대학교</item>
+        <item>삼육대학교</item>
+        <item>상명대학교</item>
+        <item>서강대학교</item>
+        <item>서경대학교</item>
+        <item>서울과학기술대학교</item>
+        <item>서울대학교</item>
+        <item>서울시립대학교</item>
+        <item>서울여자대학교</item>
+        <item>성균관대학교</item>
+        <item>성신여자대학교</item>
+        <item>세종대학교</item>
+        <item>숙명여자대학교</item>
+        <item>숭실대학교</item>
+        <item>연세대학교</item>
+        <item>이화여자대학교</item>
+        <item>중앙대학교</item>
+        <item>한국예술종합학교</item>
+        <item>한국외국어대학교</item>
+        <item>한성대학교</item>
+        <item>한양대학교</item>
+        <item>홍익대학교</item>
+    </string-array>
+    <string-array name="type">
+        <item>---------</item>
+        <item>음식점</item>
+        <item>카페</item>
+        <item>술집</item>
+        <item>노래방</item>
+        <item>당구장</item>
+        <item>피시방</item>
+    </string-array>
+
+    <string-array name="univSearch">
+        <item>모두 선택</item>
+        <item>가천대학교</item>
+        <item>가톨릭대학교</item>
+        <item>건국대학교</item>
+        <item>경기대학교</item>
+        <item>경희대학교</item>
+        <item>고려대학교</item>
+        <item>광운대학교</item>
+        <item>국민대학교</item>
+        <item>덕성여자대학교</item>
+        <item>동국대학교</item>
+        <item>동덕여자대학교</item>
+        <item>동서울대학교</item>
+        <item>명지대학교</item>
+        <item>삼육대학교</item>
+        <item>상명대학교</item>
+        <item>서강대학교</item>
+        <item>서경대학교</item>
+        <item>서울과학기술대학교</item>
+        <item>서울대학교</item>
+        <item>서울시립대학교</item>
+        <item>서울여자대학교</item>
+        <item>성균관대학교</item>
+        <item>성신여자대학교</item>
+        <item>세종대학교</item>
+        <item>숙명여자대학교</item>
+        <item>숭실대학교</item>
+        <item>연세대학교</item>
+        <item>이화여자대학교</item>
+        <item>중앙대학교</item>
+        <item>한국예술종합학교</item>
+        <item>한국외국어대학교</item>
+        <item>한성대학교</item>
+        <item>한양대학교</item>
+        <item>홍익대학교</item>
+    </string-array>
+    <string-array name="typeSearch">
+        <item>모두 선택</item>
+        <item>음식점</item>
+        <item>카페</item>
+        <item>술집</item>
+        <item>노래방</item>
+        <item>당구장</item>
+        <item>피시방</item>
+    </string-array>
+</resources>

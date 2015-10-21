@@ -1,0 +1,167 @@
+<!-- ?xml version="1.0" encoding="utf-8"? -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutReview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableLeft="@drawable/backimg"
+        android:gravity="left"
+        android:text="  이전 페이지로" />
+
+    <LinearLayout
+        android:id="@+id/reviewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back" >
+
+        <ImageView
+            android:id="@+id/writerImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp" />
+
+        <RelativeLayout
+            android:id="@+id/reviewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/writerImg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/writerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="작성자 이름"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reviewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:text="15.03.12"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/writersRec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/writerName"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/likec"
+                android:text=" 10 추천"
+                android:textColor="#3366FF" />
+
+            <TextView
+                android:id="@+id/writersEval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/writerName"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/writersRec"
+                android:drawableLeft="@drawable/starc"
+                android:text=" 14 평가"
+                android:textColor="#FFFFD700" />
+
+            <TextView
+                android:id="@+id/reviewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/writersRec"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="이카페 정말 좋아요"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/numOfLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reviewText"
+                android:layout_marginTop="3dp"
+                android:text="좋아요 10" />
+
+            <TextView
+                android:id="@+id/numOfComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reviewText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/numOfLike"
+                android:text="댓글 " />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reviewLayout" >
+
+        <Button
+            android:id="@+id/likeThisReview"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/like"
+            android:text="좋아요"
+            android:textColor="#3366FF" />
+
+        <Button
+            android:id="@+id/registerComment"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/register"
+            android:text=" 댓글 등록"
+            android:textColor="#FFFF4500" >
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/commentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout2"
+        android:layout_marginLeft="2dp"
+        android:text="리뷰에 대한 댓글 "
+        android:textColor="#FFFF4500"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/commentListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentTitle"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="3dp"
+        android:background="#FF2F4F4F" >
+    </ListView>
+
+    <EditText
+        android:id="@+id/typeComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:hint="댓글을 입력해주세요!" >
+    </EditText>
+</RelativeLayout>

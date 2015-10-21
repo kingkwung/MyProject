@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:id="@+id/action_notice"
+        android:showAsAction="never"
+        android:title="공지사항"/>
+    <item
+        android:id="@+id/action_help"
+        android:showAsAction="never"
+        android:title="도움말"/>
+    <item
+        android:id="@+id/action_qna"
+        android:showAsAction="never"
+        android:title="묻고답하기"/>
+    <item
+        android:id="@+id/action_withdraw"
+        android:showAsAction="never"
+        android:title="회원탈퇴"/>
+
+</menu>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="잘못된 정보 신고하기"
+            android:textColor="#FF0033"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/aboutInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/none"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutInfo" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="대학교" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="업소 이름" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="업소 종류" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주소" />
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지도 정보" />
+
+            <RadioButton
+                android:id="@+id/radio10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기타" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/radioGroup1"
+            android:layout_marginLeft="250px"
+            android:layout_below="@id/aboutInfo" >
+
+            <RadioButton
+                android:id="@+id/radio5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사진" />
+
+            <RadioButton
+                android:id="@+id/radio6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="설명" />
+
+            <RadioButton
+                android:id="@+id/radio7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="태그" />
+
+            <RadioButton
+                android:id="@+id/radio8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="네이버 검색 링크" />
+
+            <RadioButton
+                android:id="@+id/radio9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="없어진 업소에요" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroup1"
+            android:layout_marginTop="15dp"
+            android:text="수정할 내용 :"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMessage"
+            android:gravity="top"
+            android:hint="수정할 정보를 입력해주세요." />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextMessage"
+            android:drawableLeft="@drawable/backimg"
+            android:layout_marginTop="20dp"
+            android:text=" 뒤로가기" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/editTextMessage"
+            android:drawableLeft="@drawable/warning"
+            android:layout_marginTop="20dp"
+            android:text=" 신고하기!" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Campus Channel</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="univ">대학교 목록</string>
+    <string name="type">업소 목록</string>
+    <string name="univSearch">대학교 목록</string>
+    <string name="typeSearch">업소 목록</string>
+    <string name="app_id">554284438013249</string>
+    <string name="busi_explain">업\n소\n설\n명\n</string>
+    <string name="kakao_app_key">1de2dc158c385b6493d074fd90fe11dc</string>
+    <string name="kakao_scheme">kakao1de2dc158c385b6493d074fd90fe11dc</string>
+    <string name="kakaolink_host">kakaodemo</string>
+    <!--<string name="facebook_app_id">1535493023348117</string>-->
+
+</resources>

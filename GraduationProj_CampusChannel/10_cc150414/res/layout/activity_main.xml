@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="친구들이 추천한 업소를 보여줍니다."
+        android:textColor="#FFFFFF" />
+
+    <RelativeLayout
+        android:id="@+id/layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="-10dp"
+        android:radius="5dip" 
+        android:background="@drawable/layout_border" >
+
+        <ImageButton
+            android:id="@+id/btn_friends"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/friends_clicked" />
+
+        <ImageButton
+            android:id="@+id/btn_like"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/btn_friends"
+            android:layout_alignBottom="@+id/btn_friends"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn_friends"
+            android:background="@drawable/like_finger" />
+
+        <ImageButton
+            android:id="@+id/btn_addBusiness"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/btn_friends"
+            android:layout_alignBottom="@+id/btn_friends"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn_like"
+            android:background="@drawable/add_business" />
+
+        <ImageButton
+            android:id="@+id/btn_myInfo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/btn_friends"
+            android:layout_alignBottom="@+id/btn_friends"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn_addBusiness"
+            android:background="@drawable/man" />
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/btn_addBusiness"
+            android:layout_alignBottom="@+id/btn_addBusiness"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/search"
+            android:textColor="#000000" />
+    </RelativeLayout>
+    
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="2dp" >
+
+        <include
+            android:id="@+id/id1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:layout_weight="1"
+            layout="@layout/activity_frame1" />
+
+        <include
+            android:id="@+id/id2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:layout_weight="1"
+            layout="@layout/activity_frame2" />
+
+        <include
+            android:id="@+id/id3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:layout_weight="1"
+            layout="@layout/activity_frame3" />
+
+        <include
+            android:id="@+id/id4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:layout_weight="1"
+            layout="@layout/activity_frame4" />
+
+        <include
+            android:id="@+id/id5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:layout_weight="1"
+            layout="@layout/activity_frame5" />
+    </ViewFlipper>
+
+</LinearLayout>
+
+
+    <!--  
+    <ImageButton
+        android:id="@+id/btn_notify"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/notify"
+        android:textColor="#000000"/>
+-->
+  

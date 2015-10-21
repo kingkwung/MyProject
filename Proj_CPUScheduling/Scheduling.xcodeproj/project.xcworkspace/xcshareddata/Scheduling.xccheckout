@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FD398FBE-150A-48AD-985D-CA7208C2541E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Scheduling</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>82F4737C73FF001BEF4394D52E54726754DF6D32</key>
+		<string>https://github.com/kingkwung/MyProject.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Proj_CPUScheduling/Scheduling.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>82F4737C73FF001BEF4394D52E54726754DF6D32</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kingkwung/MyProject.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>82F4737C73FF001BEF4394D52E54726754DF6D32</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>82F4737C73FF001BEF4394D52E54726754DF6D32</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyProject</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*" >
+
+    <TableRow android:background="#FE9A2E">
+
+        <Button
+            android:id="@+id/btn_cate_all"
+            android:background="@android:color/transparent"
+            android:padding="3dip"
+            android:onClick="cateClick"
+            android:text="전체" />
+
+        <Button
+            android:id="@+id/btn_cate_none"
+            android:background="@android:color/transparent"
+            android:padding="3dip"
+            android:onClick="cateClick"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:background="#F5BCA9">
+
+        <Button
+            android:id="@+id/btn_cate_cafe"
+            android:background="@android:color/transparent"
+            android:padding="3dip"
+            android:onClick="cateClick"
+            android:text="카페" />
+
+        <Button
+            android:id="@+id/btn_cate_trip"
+            android:background="@android:color/transparent"
+            android:padding="3dip"
+            android:onClick="cateClick"
+            android:text="여행,명소" />
+    </TableRow>
+    
+      <TableRow android:background="#F6D8CE">
+
+        <Button
+            android:id="@+id/btn_cate_food"
+            android:background="@android:color/transparent"
+            android:padding="3dip"
+            android:onClick="cateClick"
+            android:text="음식점" />
+
+        <Button
+            android:id="@+id/btn_cate_bar"
+            android:background="@android:color/transparent"
+            android:padding="3dip"
+            android:onClick="cateClick"
+            android:text="바,술집" />
+    </TableRow>
+
+    <TableRow android:background="#F5BCA9">
+
+        <Button
+            android:id="@+id/btn_cate_game"
+            android:background="@android:color/transparent"
+            android:padding="3dip"
+            android:onClick="cateClick"
+            android:text="오락" />
+
+        <Button
+            android:id="@+id/btn_cate_movie"
+            android:background="@android:color/transparent"
+            android:padding="3dip"
+            android:onClick="cateClick"
+            android:text="공연장" />
+    </TableRow>
+
+</TableLayout>

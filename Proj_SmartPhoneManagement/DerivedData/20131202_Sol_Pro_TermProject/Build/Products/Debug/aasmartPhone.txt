@@ -1,0 +1,6 @@
+iGalaxy_Win_SHV-E500L Samsung 4.70 800x480 Android Quad-Core 1.40 8.00 400000.00
+jGalaxy_Win_SHV-E500S Samsung 4.70 800x480 Android Quad-Core 1.40 8.00 400000.00
+aGalaxy_S4_Zoom_SM-C105K Samsung 5.00 960x540 Android Quad-Core 2.30 16.00 600000.00
+bGalaxy_S4_Zoom_SM-C105L Samsung 5.00 960x540 Android Quad-Core 2.30 16.00 600000.00
+cGalaxy_Round_SM-G910S Samsung 5.70 1920x1080 Android Quad-Core 2.30 32.00 800000.00
+dGalaxy_Note3_SM-N900K Samsung 5.70 1080x1920 Android Quad-Core 2.30 32.00 800000.00

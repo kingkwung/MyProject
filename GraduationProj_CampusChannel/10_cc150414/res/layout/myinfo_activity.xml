@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:foo="http://schemas.android.com/apk/res/com.swdm.cc"
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:orientation="vertical"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ImageView>
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="내정보" 
+            android:background="#FFFFFF">
+        </Button>
+
+        <ImageView
+            android:id="@+id/myImage"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/b1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:scaleType="fitXY" />
+
+        <com.swdm.cc.TextViewPlus
+            android:id="@+id/myName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/myImage"
+            android:text="내 이름"
+            android:textSize="25sp"
+            android:textColor="#232323"
+            foo:customFont="fonts/charismaBK.ttf" />
+
+        <com.swdm.cc.TextViewPlus
+            android:id="@+id/myGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myName"
+            android:layout_toRightOf="@+id/myImage"
+            android:text="내 성별"
+            android:textSize="20sp" 
+            android:textColor="#7D7D7D"
+            foo:customFont="fonts/jangmedabang.ttf"/>
+
+        <com.swdm.cc.TextViewPlus
+            android:id="@+id/myRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myGender"
+            android:layout_toRightOf="@+id/myImage"
+            android:text="내 점수"
+            android:textSize="20sp"
+            android:textColor="#7D7D7D"
+            foo:customFont="fonts/jangmedabang.ttf" />
+
+        <com.swdm.cc.TextViewPlus
+            android:id="@+id/myUnivText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/myRank"
+            android:layout_below="@+id/myRank"
+            android:text=" 내 학교 : "
+            android:textSize="20sp" 
+            android:textColor="#7D7D7D"
+            foo:customFont="fonts/jangmedabang.ttf"/>
+
+        <TextView
+            android:id="@+id/myUniv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myRank"
+            android:layout_toRightOf="@+id/myUnivText"
+            android:text="---"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/editMyUniv"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/myRank"
+            android:drawableLeft="@drawable/edit"
+            android:text=" 수정" />
+
+        <Button
+            android:id="@+id/frListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/myImage"
+            android:layout_marginTop="25dp"
+            android:text="친구목록"
+            android:background="#FFFFFF" />
+
+        <org.androidconnect.listview.horizontal.adapter.HorizontalListView
+            android:id="@+id/friendListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frListTitle" />
+
+        <Button
+            android:id="@+id/kakaoInvite"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/myAct"
+            android:drawableLeft="@drawable/kakao"
+            android:text=" 카카오톡 친구 초대"
+            android:textColor="#3B170B" 
+            android:background="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/myAct"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_above="@+id/recommended"
+            android:layout_alignParentLeft="true"
+            android:text="활동 내역" 
+            android:background="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/recommended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/evaluated"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/like"
+            android:text=" 추천한 업소 : "
+            android:textColor="#3366FF" 
+            android:background="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/evaluated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/star"
+            android:text=" 평가한 업소 : "
+            android:textColor="#FFBF00" 
+            android:background="#FFFFFF"/>
+    </RelativeLayout>

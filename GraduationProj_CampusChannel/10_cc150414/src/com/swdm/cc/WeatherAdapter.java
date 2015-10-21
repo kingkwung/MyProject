@@ -1,0 +1,74 @@
+package com.swdm.cc;
+
+import com.swdm.cc.R;
+
+import android.app.Activity;
+import android.content.Context;
+import android.graphics.Color;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+public class WeatherAdapter extends ArrayAdapter<Weather>{
+
+    Context context; 
+    int layoutResourceId;    
+    Weather data[] = null;
+    
+    public WeatherAdapter(Context context, int layoutResourceId, Weather[] data) {
+        super(context, layoutResourceId, data);
+        this.layoutResourceId = layoutResourceId;
+        this.context = context;
+        this.data = data;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        View row = convertView;
+        WeatherHolder holder = null;
+        
+        if(row == null)
+        {
+            LayoutInflater inflater = ((Activity)context).getLayoutInflater();
+            row = inflater.inflate(layoutResourceId, parent, false);
+            
+            holder = new WeatherHolder();
+            holder.imgIcon = (ImageView)row.findViewById(R.id.icon);
+            holder.txtTitle = (TextView)row.findViewById(R.id.name);
+            holder.txtAddress = (TextView)row.findViewById(R.id.address);
+            
+            row.setTag(holder);
+            
+            
+            holder.txtAddress.setTextColor(Color.BLUE);
+            
+            
+            
+            holder.txtTitle.setTypeface(MainActivity.jangmeFont);
+            holder.txtAddress.setTypeface(MainActivity.jangmeFont);
+        }
+        else
+        {
+            holder = (WeatherHolder)row.getTag();
+        }
+        
+        Weather weather = data[position];
+        holder.txtTitle.setText(weather.title);
+        holder.txtAddress.setText(weather.address);
+        holder.imgIcon.setImageResource(weather.icon);
+
+        //holder.imgIcon.setImageResource(weather.icon);
+        
+        return row;
+    }
+    
+    static class WeatherHolder
+    {
+        ImageView imgIcon;
+        TextView txtTitle;
+        TextView txtAddress;
+    }
+}

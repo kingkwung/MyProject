@@ -1,0 +1,293 @@
+<!-- ?xml version="1.0" encoding="utf-8"? -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/univ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/aboutUniv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/univ"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/univ"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/aboutName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/univ"
+            android:layout_toRightOf="@id/name"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/aboutAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/address"
+            android:text="위치" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/phonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_toRightOf="@id/phone"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:text="사진 : " />
+
+        <WebView
+            android:id="@+id/aboutPic"
+            android:layout_width="wrap_content"
+            android:layout_height="270dp"
+            android:layout_below="@id/pic"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:scrollbars="none" >
+        </WebView>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutPic"
+            android:text="설명 : " />
+
+        <TextView
+            android:id="@+id/aboutInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutPic"
+            android:layout_toRightOf="@id/info" />
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutInfo"
+            android:text="태그 : " />
+
+        <TextView
+            android:id="@+id/aboutTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutInfo"
+            android:layout_toRightOf="@id/tag"
+            android:text="해당태그" />
+
+        <EditText
+            android:id="@+id/new_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tag"
+            android:hint="새로운 태그를 추가해 주세요" />
+
+        <Button
+            android:id="@+id/insert_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_tag"
+            android:drawableLeft="@drawable/tag"
+            android:text=" 태그추가" >
+        </Button>
+
+        <Button
+            android:id="@+id/evaluate_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/back"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/star"
+            android:text=" 평가하기"
+            android:textColor="#FFFFD700" >
+        </Button>
+
+        <Button
+            android:id="@+id/recommendation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/back"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/like"
+            android:text=" 추천하기"
+            android:textColor="#3366FF" />
+
+        <Button
+            android:id="@+id/showMap"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_above="@+id/aboutPic"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/map"
+            android:text=" 지도 보기" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_above="@+id/showMap"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/phone"
+            android:text=" 전화걸기"
+            android:textColor="#5bb435" />
+
+        <Button
+            android:id="@+id/preImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/aboutPic"
+            android:layout_alignBottom="@+id/aboutPic"
+            android:layout_alignParentLeft="true"
+            android:text="&lt;" />
+
+        <Button
+            android:id="@+id/nextImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/aboutPic"
+            android:layout_alignBottom="@+id/aboutPic"
+            android:layout_alignParentRight="true"
+            android:text=">" />
+
+        <Button
+            android:id="@+id/feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/evaluate_tag"
+            android:layout_toRightOf="@+id/searchNaver"
+            android:drawableLeft="@drawable/facebook"
+            android:text=" 공유하기"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/insert_tag"
+            android:drawableLeft="@drawable/backimg"
+            android:text=" 뒤로가기" />
+
+        <Button
+            android:id="@+id/searchNaver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/insert_tag"
+            android:layout_toRightOf="@+id/goNaver"
+            android:drawableLeft="@drawable/naver"
+            android:text=" 네이버로 검색"
+            android:textColor="#5bb435" />
+
+        <WebView
+            android:id="@+id/goNaver"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/searchNaver"
+            android:clickable="false"
+            android:focusable="false"
+            android:scrollbars="none" >
+        </WebView>
+
+        <TextView
+            android:id="@+id/reportMis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/back"
+            android:clickable="true"
+            android:text="잘못된 정보 신고하기 "
+            android:textColor="#FF0033" />        
+        
+        <TextView
+            android:id="@+id/reviewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reportMis"
+            android:text="업소에 대한 리뷰 "
+            android:textSize="20sp"
+            android:layout_marginLeft="2dp"
+            android:textColor="#FFFF4500" />
+
+        <ListView
+            android:id="@+id/reviewListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reviewTitle"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#FF2F4F4F" >
+        </ListView>
+
+        <EditText
+            android:id="@+id/typeReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/reviewListView"
+            android:layout_toLeftOf="@+id/registerReview"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:hint="리뷰를 입력해주세요!" >
+        </EditText>
+
+        <Button
+            android:id="@+id/registerReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reviewListView"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:textColor="#FFFF4500"
+            android:drawableLeft="@drawable/register"
+            android:text=" 등록" >
+        </Button>
+    </RelativeLayout>
+
+</ScrollView>
